@@ -1,0 +1,33 @@
+.Form-Input {
+    display: inline-flex;
+    align-items: center;
+    width: 70%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(25, 25, 25, 0.32);
+    border-radius: 15px;
+    background: #ffcbbb;
+}
+
+input {
+    border: 10px;
+    outline: none;
+    height: 50%;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #ffcbbb;
+}
+
+::placeholder {
+    font-size: 12px;
+    font-family: Sans-serif;
+    color: #666;
+
+}
+
+:host {
+    display: inline-block;
+    border: 1px solid rgba(25, 25, 25, 0.32);
+}

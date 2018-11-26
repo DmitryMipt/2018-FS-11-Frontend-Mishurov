@@ -6,8 +6,9 @@ export function ResultForm({messages, selectedFiles}) {
     let messagesJSX = messages.map((el) => <li>{el}</li>);
 
 
-        return (
+        return ( <div className="res">
         <ul id="messages" className="result">{messagesJSX.reverse()}</ul>
+            </div>
         );
 
 

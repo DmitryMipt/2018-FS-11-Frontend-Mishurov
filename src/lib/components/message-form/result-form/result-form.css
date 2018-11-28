@@ -8,7 +8,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     list-style: none;
-    height: calc(100% - 35px);
+    height: calc(100% - 103px);
     flex-direction: column-reverse;
     align-items: flex-end;
     width: 100%;

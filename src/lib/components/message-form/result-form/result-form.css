@@ -14,13 +14,13 @@
     width: 100%;
 }
 
-.result>li {
+.result>li, .fileA {
     display: block;
     padding: 12px 12px 24px 12px;
     clear: both;
     border-radius: 15px 15px 0 15px;
     float: right;
-    background: #ffd1dc;
+    background: #e28090;
     color: black;
     position: relative;
     margin: 10px 20px;
@@ -29,7 +29,9 @@
     max-width: 80%;
     box-shadow: 1px 1px 1px lightslategray;
 }
-img{
+
+
+.result>img{
     max-width: 400px;
     max-height: 400px;
 }

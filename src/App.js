@@ -10,25 +10,22 @@ const history  = createBrowserHistory();
 
 const Chats = ({match}) => {
     let chats= [];
-    for (let i = 0; i < 6; i++) {
-        chats.push(<li><Link to={`${match.url}/chatId=${i}`}>chat{i}</Link></li>)
+    for (let i = 0; i < 15; i++) {
+        chats.push(<li className="chatLi"><Link to={`${match.url}/chatId=${i}`}>chat{i}</Link></li>)
     }
     return (
-        <div>
-            <ul>
+
+            <div className="ListChats">
                 {chats}
-            </ul>
-        </div>
+            </div>
+
     );
 }
 
-const Li = () => (
-    <div>
-        <h2>Lit1</h2>
-        <h2>Lit2</h2>
-        <h2>Lit3</h2>
-        <h2>Lit4</h2>
-        <h2>chat5</h2>
+const  Li = () => (
+    <div className='Auth'>
+        <h2>Authorization</h2>
+
     </div>
 )
 
@@ -49,19 +46,21 @@ class Menu extends Component {
 
     render() {
         const style = {
-            zIndex: (this.state.opacity) ? 1000 : -1000,
+
             opacity: +this.state.opacity,
         }
+
+
         return <div className="head" >
             <div className="MenuZone" onClick={this.toggle}  >
                 <i id="3" className="material-icons">reorder</i>
             </div>
 
-            <div className="subMenu" style={style}>
+            <div className="chooseMenu" style={style}>
 
-                <ul>
-                    <li><Link to="/">Li</Link></li>
-                    <li><Link to="/list_chats">Chats</Link></li>
+                <ul className="subMenu">
+                    <li><Link to="/" className="item">Li</Link></li>
+                    <li><Link to="/list_chats" className="item">Chats</Link></li>
 
                 </ul>
             </div>

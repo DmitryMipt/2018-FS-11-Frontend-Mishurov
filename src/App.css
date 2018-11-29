@@ -4,6 +4,7 @@
     width: 100%;
     align-items: center;
     margin: 0px;
+    height: 64px;
 
 }
 .MenuZone{
@@ -15,9 +16,15 @@
 
 }
 .Dialogs{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
-    margin-right: 40%;
+    margin-right: 20px;
     font-size: 25px;
+
+
 
 }
 
@@ -33,4 +40,61 @@
 }
 body{
     margin: 0px;
+}
+.ListChats {
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - 68px);
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.subMenu{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+}
+.subMenu>li{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.chooseMenu{
+    width: 10%;
+    background-color: rgba(192,192,192,0.5);
+    border: 3px black;
+    margin-top: 10px;
+    border-radius: 10%;
+
+
+
+
+}
+.chatLi{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+
+    border-bottom: 2px solid dimgray;
+}
+.item{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.Auth {
+    text-align: center;
 }

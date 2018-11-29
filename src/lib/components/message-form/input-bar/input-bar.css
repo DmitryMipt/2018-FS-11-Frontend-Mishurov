@@ -1,6 +1,7 @@
 .InputBar {
     display: inline-flex;
-    background-color: white;
+    background-color: #ab343a;
+    filter: contrast(80%);
     height: 35px;
     width: 100%;
     position: absolute;
